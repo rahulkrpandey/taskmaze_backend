@@ -19,7 +19,7 @@ app.use(express_1.default.json());
 const server = (0, node_http_1.createServer)(app);
 const io = new socket_io_1.Server(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: process.env.CORS_ORIGIN_URL,
         methods: ["GET", "POST"],
     },
 });

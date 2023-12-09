@@ -27,7 +27,7 @@ const io = new Server<
   SocketData
 >(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: process.env.CORS_ORIGIN_URL,
     methods: ["GET", "POST"],
   },
 });
