@@ -27,7 +27,7 @@ const io = new Server<
   SocketData
 >(server, {
   cors: {
-    origin: "*",
+    origin: "https://taskmaze-frontend.vercel.app/",
     methods: ["GET", "POST"],
   },
 });
